@@ -1,0 +1,197 @@
+/*---GENERAL---*/
+*{
+    margin: 0%;
+    padding: 0%;
+    user-select: none;
+}
+/*---GENERAL---*/
+/*---BODY---*/
+body{
+    /*Posicionamiento*/
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: hsl(0, 64%, 4%);
+    z-index: 1;
+}
+/*---BODY---*/
+/*---CONTENEDOR---*/
+div{
+    /*Dimensiones*/
+    width: 28%;
+    height: 75%;
+
+    /*Borde*/
+    border: none;
+    border-radius: 1%;
+
+    background-color: hsl(0, 4%, 12%);
+    z-index: 2;
+}
+/*---CONTENEDOR---*/
+/*---TÍTULO---*/
+h1{
+    margin: 12.5%  0% 12.5% 0%;
+
+    font-family: 'Oswald', sans-serif;
+    color: #F7F7F7;
+    font-size: 45px;
+    font-weight: 500;
+
+    z-index: 3;
+}
+/*---TÍTULO---*/
+input[type="text"]{
+    width: 70%;
+    height: 8%;
+
+    margin-bottom: 4%;
+    border: solid 1px #F7F7F7;
+    border-radius: 3px;
+    background-color: transparent;
+
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #F7F7F7;
+    text-indent: 5%;
+
+    outline: transparent;
+    z-index: 3;
+}
+input[type="text"]:focus{
+    border-color: #0077C0;
+}
+input[type="text"]:hover{
+    border-color: #0077C0;
+}
+input[type="password"]{
+    width: 70%;
+    height: 8%;
+
+    margin-bottom: 4%;
+
+    border: solid 1px #F7F7F7;
+    border-radius: 3px;
+    background-color: transparent;
+
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #F7F7F7;
+    text-indent: 5%;
+
+    outline: transparent;
+    z-index: 3;
+}
+input[type="password"]:focus{
+    border-color: #0077C0;
+}
+input[type="password"]:hover{
+    border-color: #0077C0;
+}
+::placeholder{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #F7F7F7;
+    text-indent: 5%;
+    z-index: 1;
+}
+input[type="text"]:hover::placeholder{
+    color: #0077C0;
+}
+input[type="text"]:focus::placeholder{
+    color: #0077C0;
+}
+input[type="password"]:hover::placeholder{
+    color: #0077C0;
+}
+input[type="password"]:focus::placeholder{
+    color: #0077C0;
+}
+/*---TÍTULO---*/
+/*---CHECKBOX---*/
+input[type="checkbox"]{
+    display: none;
+    
+}
+input[type="checkbox"] + label::before{
+    content: "\2713";
+    border: solid 0.1em#F7F7F7;
+    border-radius: 0.25em;
+    display: inline-block;
+    
+    
+    width: 1.1em;
+    height: 1em;
+    padding-left: 0.02em;
+    padding-bottom: 0.3em;
+    margin-right: 0.5em;
+    
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+    cursor: pointer;
+    z-index: 1;
+}
+input[type="checkbox"]:checked + label::before{
+    background-color: #2185D5;
+    border-color: transparent;
+    color: #F7F7F7;
+}
+input[type="checkbox"] + label:active:before{
+    transform:scale(0);
+}
+label{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #F7F7F7;
+}
+/*---CHECKBOX---*/
+/*---BOTON: INICIAR SESION---*/
+input[type="submit"]{
+    width: 70%;
+    height: 8%;
+
+    border: transparent;
+    background-color: #2185D5;
+    border-radius: 3px;
+    margin-top: 14.5%;
+
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #F7F7F7;
+    z-index: 1;
+}
+input[type="submit"]:hover{
+    background-color: #0077C0;
+    cursor: pointer;
+}
+input[type="submit"]:active{
+    background-color: #2185D5;
+}
+/*---BOTON: INICIAR SESION---*/
+/*---LINK---*/
+a{
+    display: flex;
+    justify-content: space-around;
+
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #F7F7F7;
+
+
+}
+a:hover{
+    color: #0077C0;
+}
+a:active{
+    color: #F7F7F7;
+}
+/*---LINK---*/
