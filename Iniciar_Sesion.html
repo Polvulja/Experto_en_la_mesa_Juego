@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Iniciar Sesión</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="iniciarsesion.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    </head>
+
+    <!--<?php
+
+      function connectDB(){
+          $enlace = mysqli_connect("localhost","root","lab02","rim_database");
+          return $enlace; 
+      }
+
+      function disconnectDB($conexion){
+          $close= mysqli_close($conexion);
+      }
+
+      function validar($nombre, $contra){
+        $conexion = connectDB();
+        $sql = "SELECT * FROM usuarios";
+        mysqli_set_charset($conexion, "utf8"); 
+        if(!$result = mysqli_query($conexion, $sql)) die();
+        while($row = mysqli_fetch_array($result)) 
+        { 
+            $usuario=$row['email'];
+            //$ct=password_verify($contra, $row['password']);
+            $ct=$row['password'];
+            if($usuario == $nombre && $contra == $ct){
+                disconnectDB($conexion);
+                echo "<script>window.location.href = 'index.html'; </script>";
+                return;
+            }else if ($usuario == $nombre && $contra != $ct) {
+                echo "<script>alert('Contraseña incorrecta. Intente nuevamente.');</script>";
+                disconnectDB($conexion);
+                return;
+            }
+        }
+        disconnectDB($conexion);
+        echo "<script>alert('Usuario no registrado.');</script>";
+        return;
+      }
+      if(isset($_POST["enviar"])){
+      $nombre = $_POST["correo"];
+      $contra = $_POST["contrasena"];
+      validar($nombre, $contra);
+      }
+      
+?>-->
+
+    <script>
+        $(document).ready(function () {
+          $('#mostrar_contrasena').click(function () {
+            if ($('#mostrar_contrasena').is(':checked')) {
+              $('#contrasena').attr('type', 'text');
+            } else {
+              $('#contrasena').attr('type', 'password');
+            }
+          });
+        });
+        </script>
+    <body>
+      <div>
+        <center>
+          <form method="POST" action="iniciarsesion.php">
+            <h1>Iniciar Sesión</h1>
+            <input type="text" id="correo" name="correo" placeholder="Correo electrónico"><br>
+            <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña"><br>
+            <input type="checkbox" id="mostrar_contrasena"><label for="mostrar_contrasena">Mostrar Contraseña</label><br></br>
+            <input type="submit" name="enviar" value="Iniciar Sesión"><br></br>
+            <a href="registrarse.php">No tienes una cuenta? Regístrate</a>
+          </form>
+        </center>
+      </div>
+    </body>
+</html>
