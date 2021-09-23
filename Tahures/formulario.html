@@ -1,0 +1,54 @@
+<HTML>
+    <head>
+        <title>Formulario | Tahures</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <link rel="stylesheet" href="css/formulario.css">
+    </head>
+    <body>
+        
+            <div id="titulo">
+                <h1>Cuestionario</h1>
+            </div>
+            <div class="cont">
+                <p>¿Cuantas cartas tiene la baraja inglesa?</p>
+                <div class="respuestas">
+                    <i class="fas fa-user-tag icono" id="respuestas"></i>
+                    <select class="input" onchange="respuestas()" name="opciones" id="opciones">
+                    <option selected="select" id="nada">Respuesta</option>
+                    <option value="1"id="resp1">54</option>
+                    <option value="2"id="resp2">56</option>
+                    <option value="3"id="resp3">50</option></select>
+                </div>
+            </div>
+            <div class="cont">
+                <p>¿En qué año se creo la compañia Bicycle?</p>
+                <div class="respuestas">
+                    <i class="fas fa-user-tag icono" id="respuestas"></i>
+                    <select class="input" onchange="respuestas()" name="opciones" id="opciones">
+                    <option selected="select" id="nada">Respuesta</option>
+                    <option value="1"id="resp1">1897</option>
+                    <option value="2"id="resp2">1901</option>
+                    <option value="3"id="resp3">1885</option></select>
+                </div>
+            </div>
+            <div class="cont">
+                <p>¿Quien fue SW Ernase?</p>
+                <div class="respuestas">
+                    <i class="fas fa-user-tag icono" id="respuestas"></i>
+                    <select class="input" onchange="respuestas()" name="opciones" id="opciones">
+                    <option selected="select" id="nada">Respuesta</option>
+                    <option value="1"id="resp1">Samuel Wilson Ernase</option>
+                    <option value="2"id="resp2">Scarlett Wood Ernase</option>
+                    <option value="3"id="resp3">Ninguna es correcta</option>
+                    <option value="4"id="resp4">Ambas son correctas</option></select>
+                </div>
+            </div>
+            <form class="formulario">
+                <div id="boton">
+                    <input type="button" value="Continuar">
+                </div>
+            </form>
+    </body>
+</HTML>

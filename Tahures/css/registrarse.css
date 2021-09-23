@@ -58,7 +58,7 @@ body{
     z-index: 3;
     color: hsl(0,0%,93%);
 }
-#input > .input::placeholder{
+.input::placeholder{
     color: hsl(0,0%,93%);
     font-size: 1vw;
 }
