@@ -1,0 +1,106 @@
+body{
+    display: flex;
+    align-items: center;
+    background-color: hsl(212,15%,22%);
+    justify-content: center;
+
+    z-index: 1;
+}
+.formulario{
+    width: 30%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    z-index: 2;
+
+    background-color: hsl(212,15%,25%);
+    border-radius: 1%;
+}
+#titulo{
+    width: 100%;
+    height: auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.7vw;
+}
+#titulo > h1{
+    z-index: 3;
+    color: hsl(0,0%,93%);
+}
+#inputs{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+}
+.input{
+    width: 19.5vw;
+    height: 6.5vh;
+    background-color: transparent;
+    border-radius: 2px;
+    border: 1px solid hsl(0,0%,93%);
+    outline: none;
+    text-indent: 2.5%;
+    margin: 0.8% 0% 0.8% 0%;
+    z-index: 3;
+}
+.input::placeholder{
+    color: hsl(0,0%,93%);
+    font-size: 1vw;
+}
+#mostrarContraseña{
+    width: 100%;
+    height: auto;
+    
+
+    display: flex;
+    justify-content: center;
+}
+#mostrarContraseña > label{
+    color: hsl(0,0%,93%);
+    font-size: 1.3vw;
+    z-index: 3;
+}
+#boton{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+}
+#boton > input[type="button"]{
+    background-color: hsl(183,100%,35%);
+    width: 19.5vw;
+    height: 6.5vh;
+    border: none;
+    border-radius: 2px;
+    z-index: 3;
+    color: hsl(0,0%,93%);
+    font-size: 1.5vw;
+}
+#cuenta{
+    width: 100%;
+    height: auto;
+    color: hsl(0,0%,93%);
+
+    display: flex;
+    justify-content: center; 
+}
+#cuenta > p{
+    font-size: 1.25vw;
+}
+#cuenta > p > a{
+    text-decoration: none;
+    color: hsl(183,100%,35%);
+    font-weight: 600;
+    font-size: 1.5vw;
+}
