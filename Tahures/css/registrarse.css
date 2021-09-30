@@ -3,7 +3,7 @@
     margin: 0%;
 }
 body{
-    padding-top: 3%;
+    padding-top: 8%;
     padding-bottom: 3%;
     display: flex;
     align-items: center;
@@ -43,6 +43,7 @@ body{
     z-index: 3;
     user-select: none;
 }
+
 #registro a{
     /*Color del texto*/
     color: #7f5af0;
