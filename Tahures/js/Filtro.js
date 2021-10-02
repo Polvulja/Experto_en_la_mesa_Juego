@@ -4,7 +4,7 @@ function respuestas1(){
 }
 
 function Enviar_Formulario(){
-	if(document.querySelectorAll('nada').selected ==true)
+	if(document.querySelectorAll('#nada').selected ==true)
 		window.alert('Por favor, complete el filtro')
 	
 	
