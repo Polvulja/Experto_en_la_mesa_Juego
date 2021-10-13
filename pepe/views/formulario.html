@@ -10,7 +10,7 @@
     </head>
     <body>
         <div>
-            <div id="registro" id="form">
+            <form id="registro" id="form">
                 <h1>Filtro</h1>
 
                     <div class="respuestas" onchange="boton_show()">
@@ -85,10 +85,18 @@
                         <option value="3"id="resp29">30</option>
                         <option value="4"id="resp30">15</option></select>
 
+                        <p>¿En que año se creo la Compañia Bicycle?</p>
+                        <i class="fas fa-user-tag icono" id="respuestas"></i>
+                        <select class="input"  name="opciones" id="opciones">
+                        <option selected="select" id="nada2">Seleccione una Respuesta</option>
+                        <option value="1"id="resp4">1885</option>
+                        <option value="2"id="resp5">1901</option>
+                        <option value="3"id="resp6">1897</option></select>
+
                         <input type="button" value="Atras" class="boton"OnClick="location.href='iniciarSesion.html' ">
                         <input type="button" value="Continuar" id="boton_registrarse" style="display: none;" OnClick="location.href='registrarse.html' " >
                 </div>
-            </div>
+            </form>
         </div>
     </body>
 </HTML>
