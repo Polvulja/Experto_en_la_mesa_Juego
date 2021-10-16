@@ -14,11 +14,11 @@
                 <h1>Registrarse</h1>
 
                 <div>
-                    <p>Nombre:<i class="fa-solid fa-circle-exclamation"></i></p>
-                    <input type="text" id="nombre"class="input" name="nombre">
+                    <p>Nombre completo:<i class="fa-solid fa-circle-exclamation"></i></p>
+                    <input type="text" id="nom_comple"class="input" name="nom_comple">
 
-                    <p>Apellido:<i class="fa-solid fa-circle-exclamation"></i></p>
-                    <input type="text" id ="apellido"class="input"name="apellido">
+                    <p>Nombre de Usuario:<i class="fa-solid fa-circle-exclamation"></i></p>
+                    <input type="text" id ="nom_usua"class="input"name="nom_usua">
 
                     <p>Correo Electrónico:<i class="fa-solid fa-circle-exclamation"></i></p>
                     <input type="email"  id="mail" class="input"name="mail">
@@ -27,8 +27,6 @@
                     <input type="password" id="contra"class="input"name="contra" >
 
                     <button class ="Boton_registro" name="boton_register"value="Continuar" >Registrarse</button> 
-                
-                    <p>¿Ya tienes una cuenta? </p><a href="iniciarSesion.php" style="color:#0505B4">Iniciar Sesión</a>
                 </div>
             </form>
             <?php
