@@ -10,7 +10,7 @@
     <body>
         <div>
         <div>
-            <form action="validar.php" method="post" >
+        <form id="registro" id="form"method="POST" >
                 <h1>Iniciar Sesion</h1>
 
                 <div>
@@ -20,12 +20,14 @@
                     <p>Contraseña:<i class="fa-solid fa-circle-exclamation"></i></p>
                     <input type="password" id="contra"class="input"name="contra" >
 
-                    <button class ="Boton_registro"value="Continuar" type="submit">Iniciar Sesión</button> 
+                    <button class ="Boton_registro"value="Continuar" name="enviar" type="submit">Iniciar Sesión</button> 
                 
                     <p>¿No tienes una cuenta? </p><a href="views/formulario.php" style="color:#0505B4">Registrarse</a>
                 </div>
             </form>
-
+            <?php
+            include("php/iniciar_sesion.php");
+            ?>
         </div>
     </body>
 </html>

@@ -30,7 +30,7 @@
                 </div>
             </form>
             <?php
-            include("../Registrar.php");
+            include("../php/Registrar.php");
             ?>
         </div>
     </body>
