@@ -26,6 +26,9 @@
                     <p>Contraseña:<i class="fa-solid fa-circle-exclamation"></i></p>
                     <input type="password" id="contra"class="input"name="contra" >
 
+                    <p>Foto de Perfil:<i class="fa-solid fa-circle-exclamation"></i></p>
+                    <input type="file" name="foto_avatar" style="color: azure;"/>
+
                     <button class ="Boton_registro" name="boton_register"value="Continuar" >Registrarse</button> 
                 </div>
             </form>
