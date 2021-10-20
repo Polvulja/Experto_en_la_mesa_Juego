@@ -1,10 +1,9 @@
-
 *{
 	margin: none;
 }
 
 main{
-	margin-left: 10%;
+	margin-left: 0%;
 }
 h1{
 	color: #94a1b2;
@@ -19,10 +18,10 @@ h1{
 }
 
 .contenedor-padre{
-	width: 95.5%;
+	width: 30%;
 	height: 100%;
-	border: 1px solid #242629;
-	background: #242629;
+	border: 1px solid white;
+	background: white;
 	padding: 10px;
 }
 
