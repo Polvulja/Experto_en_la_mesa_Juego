@@ -28,7 +28,7 @@
                 $_SESSION["mail"] = $usuario;
                 header('Location: views/Inicio.php');
                 return;
-            }else if ($usuario == $mail && $contra != $ct) {
+            }else if ($usuario == $mail && $Contraseña != $ct) {
                 echo "<script>alert('Contraseña incorrecta. Intente nuevamente.');</script>";
                 disconnectDB($conexion);
                 return;

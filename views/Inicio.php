@@ -74,7 +74,6 @@
 </div>
 
 </main>
-
 <div class="sidebar"><!--Barra--> 
 
     <div class="logo-details"><!--Titulo--> 
@@ -93,7 +92,7 @@
      </li>
 
      <li><!--Libros--> 
-       <a href="../views/libros.html">
+       <a href="../views/libros.php">
         <i class='bx bx-book-bookmark'></i>
          <span class="links_name">Libros</span>
        </a>
@@ -134,15 +133,17 @@
 
      <li class="profile"><!--Avatar--> 
          <div class="profile-details">
-           <img src="../avatar.png" alt="profileImg">
+           <img src="../img/avatar.png" alt="profileImg">
            <div class="name_job">
-            <div class="name">Usuario 1</div>
+            <div class="name">Usuario 1
+            </div>
            </div>
-           <a href="/php/iniciar_sesion.php">
+           <a href="../index.php">
             <i class='bx bx-log-out' id="log_out" ></i>
           </a>
          </div>
      </li>
+    
 
     </ul>
     

@@ -19,14 +19,19 @@
     window.location.href="Inicio.php";
     </script>';
        <?php
+        
     } else {
         ?> 
-        <h3>¡Ups ha ocurrido un error!</h3>
+        <script type="text/javascript">
+    alert("¡Ups ha ocurrido un error!");
+    </script>';
        <?php
     }
 }   else {
         ?> 
-        <h3>¡Por favor complete los campos!</h3>
+        <script type="text/javascript">
+    alert("¡Por favor complete los campos!");
+    </script>';
        <?php
 }
        
