@@ -9,7 +9,12 @@
    </head>
 <body>
   <h1>Origen, Definicion e Historia</h1>
+  <div class="contenedor-title">
+    
+  </div>
+
 <main><!--Historia--> 
+
     <div class="contenedor-padre">
       
       <div class="contenedor-seg"><!--Baraja Española--> 
@@ -31,25 +36,28 @@
         </div>
       </div>
       <div class="contenedor-seg"><!--Baraja Francesa--> 
-        <div class="contenedor-img-2">
-           <img class="img-1" src="../img/Barj_francesa.png">
-           <label class="label-2" style="color: #94a1b2;">Baraja Francesa</label>
-        </div>
         <div class="desc-2">
           <p class="texto">La baraja Francesa, la cual consiste en 4 palos (Treboles, Picas, Corazones y Diamantes) y 54 cartas (AS,2,3,4,5,6,7,8,9,10, Valtes u 11(Jacks), Dames o 12 (Queen) y Rois o 13 (King)). La diferencia con la baraja inglesa son las figuras, las cuales cambian de nombre y son mas detallado sa la hora de representarlos. Se considera que el origen salio de la baraja Alemana, del Tarot y Española.</p>
         </div>
+        <div class="contenedor-img-4">
+           <img class="img-2" src="../img/Barj_francesa.png">
+           <label class="label-2" style="color: #94a1b2;">Baraja Francesa</label>
+        </div>
       </div>
       <div class="contenedor-seg"><!--Baraja Inglesa--> 
-        <div class="contenedor-img-2">
-           <img class="img-1" src="../img/Barj_Inglesa.png">
+        <div class="contenedor-img-5">
+           <img class="img-3" src="../img/Barj_Inglesa.png">
            <label class="label-2" style="color: #94a1b2;">Baraja Inglesa</label>
         </div>
-        <div class="desc-2">
+        <div class="desc-3">
           <p class="texto">La baraja Inglesa, la cual consiste en 4 palos (Treboles, Picas, Corazones y Diamantes) y 54 cartas (AS,2,3,4,5,6,7,8,9,10, Jack u 11,Queen o 12 y King o 13). Se considera que el origen salio de la baraja Alemana, del Tarot y Española.</p>
         </div>
       </div>
     </div>
     <h1>Tahúres</h1>
+    <div class="contenedor-title-2">
+    
+    </div>
     <div class="contenedor-hijo"><!--Tahures--> 
       <div class="desc">
         <p class="texto">El Tahúr/es es la persona que es muy experto en el manejo de las cartas, los dados, etc, lo hace con frecuencia, especialmente para apostar y ganar dinero sirviéndose de su habilidad o recurriendo al engaño y las trampas cometidas en los siguientes juegos: Poker, BlackJack, Bacará, Canasta, Craps.</p>
