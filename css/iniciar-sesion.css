@@ -63,6 +63,7 @@
 	margin-left: 0%;
 	background: none;
 	border: none;
+	color: #94a1b2;
 }
 
 .input.pri{
@@ -72,6 +73,7 @@
 	background: none;
 	border-radius: none;
 	text-decoration: none;
+	color: #94a1b2;
 }
 
 .button{
