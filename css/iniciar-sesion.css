@@ -1,0 +1,117 @@
+*{
+	margin: 0;
+	background: #242629;
+}
+
+.contenedor-iniciar-sesion{
+	display: flex;
+	flex-direction: column;
+	width: 36.8%;
+	height: 400px;
+	background: #11101D;
+	margin: auto;
+	margin-top: 5%;
+	border-radius: 5px;
+	padding: 25px;
+}
+
+.label-1{
+	background: none;
+	font-size: 38px;
+	color: white;
+	margin-left: 30%;
+}
+
+.contenedor-input1{
+	display: flex;
+	background: none;
+	margin-top: 8%;
+	border: 1px solid #94a1b2;
+	background: none;
+	color: #94a1b2;
+	border-radius: 5px;
+	width: 100%;
+	height: 10%;
+	font-size: 15px;
+}
+
+.contenedor-input2{
+	display: flex;
+	background: none;
+	margin-top: 5%;
+	background: none;
+	border: 1px solid #94a1b2;
+	background: none;
+	color: #94a1b2;
+	border-radius: 5px;
+	width: 100%;
+	height: 10%;
+	font-size: 15px;
+}
+
+.icon{
+	background: none;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.input{
+	width: 99%;
+	height: 95%;
+	margin-left: 0%;
+	background: none;
+	border: none;
+}
+
+.input.pri{
+	width: 99%;
+	height: 95%;
+	margin-left: 0%;
+	background: none;
+	border-radius: none;
+	text-decoration: none;
+}
+
+.button{
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    background: #1C3DBA;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10%;
+}
+
+.button:hover{
+    background: #0B299B;
+    transition: all 0.2s ease-out;
+}
+
+.contenedor-cuenta{
+	display: flex;
+	background: none;
+	margin-top: 5%;
+}
+
+.label-2{
+	background: none;
+	font-size: 20px;
+	color: #94a1b2;
+}
+
+.label-3{
+	background: none;
+	font-size: 20px;
+	margin-left: 1%;
+	color: #1C3DBA;
+	text-decoration: none;
+}
+
+.label-3:hover{
+	color: #0B299B;
+}
+
