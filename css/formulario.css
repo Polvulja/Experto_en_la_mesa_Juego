@@ -1,127 +1,118 @@
 *{
-    margin: 0;
-    padding: 0;
-}
-body{
-    padding-top: 3%;
-    padding-bottom: 3%;
-    display: flex;
-    align-items: center;
-    background-color: #242629;
-    justify-content: center;
-    flex-direction: column;
+	margin: 0;
+	background: #242629;
 }
 
-.Boton_registro{
-    width: 100%;
-    height: 8%;
-
-    background-color: #0505B4;
-    color: #fffffe;
-
-    border: 1px solid transparent;
-    border-radius: 4px;
-
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    font-size: 1.3vw;
-
-    margin-top: 7%;
-    margin-bottom: 4%;
-    z-index: 3;
-    cursor: pointer;
-
+.contenedor-iniciar-sesion{
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	height: 800px;
+	background: #11101D;
+	margin: auto;
+	margin-top: 3%;
+	border-radius: 5px;
+	padding: 25px;
+	
 }
-#registro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    background-color: #11101D;
 
-    border-radius: 4px;
-    z-index: 2;
+.label-1{
+	background: none;
+	font-size: 38px;
+	color: white;
+	margin-left: 30%;
 }
-#titulo{
-    width: 100%;
-    height: auto;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    font-size: 1.7vw;
+.contenedor-input1{
+	display: flex;
+	background: none;
+	margin-top: 5%;
+	border: 1px solid #94a1b2;
+	background: none;
+	color: #94a1b2;
+	border-radius: 5px;
+	width: 100%;
+	height: 40%;
+	font-size: 20px;
 }
-.cont{
-    width: 40%;
-    height: 12.5%;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    z-index: 2;
-
-    margin: 1% 0% 1% 0%;
-
-    background-color: hsl(212,15%,25%);
-    border-radius: 1%;
+.contenedor-input2{
+	display: flex;
+	background: none;
+	margin-top: 5%;
+	background: none;
+	border: 1px solid #94a1b2;
+	background: none;
+	color: #94a1b2;
+	border-radius: 5px;
+	width: 100%;
+	height: 40%;
+	font-size: 20px;
 }
-.cont > p{
-    font-size: 1.4vw;
-    color: hsl(0,0%,93%);
-    z-index: 3;
-}
-#boton{
-    width: 100%;
-    height: auto;
 
-    display: flex;
-    justify-content: center;
+.icon{
+	background: none;
+	font-size: 20px;
+	margin-top: 7px;
+	margin-right: 10px;
+	margin-left: 10px;
 }
-#registro p{
-    color: #94a1b2;
 
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 1.15vw;
-
-    z-index: 3;
-    user-select: none;
+.input{
+	width: 100%;
+	height: 99%;
+	margin-left: 0%;
+	background: none;
+	border: none;
+	font-size: 15px;
 }
-#boton > input[type="button"]{
-    background-color: hsl(183,100%,35%);
-    width: 19.5vw;
-    height: 6.5vh;
+
+.input.pri{
+	width: 100%;
+	height: 99%;
+	margin-left: 0%;
+	background: none;
+	border-radius: none;
+	text-decoration: none;
+}
+
+.button{
     border: none;
-    border-radius: 2px;
-    z-index: 3;
-    color: hsl(0,0%,93%);
-    font-size: 1.5vw;
-}
-input[type="button"]{
-    width: 49%;
-    height: 8%;
-
-    background-color: #0505B4;
-    color: #fffffe;
-
-    border: 1px solid transparent;
-    border-radius: 4px;
-
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    font-size: 1.3vw;
-
-    margin-top: 7%;
-    margin-bottom: 4%;
-    z-index: 3;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    background: #1C3DBA;
+    padding: 15px 20px;
+    border-radius: 5px;
     cursor: pointer;
+    margin-top: 8%;
+}
 
+.button:hover{
+    background: #0B299B;
+    transition: all 0.2s ease-out;
 }
-#registro input[type="button"]:hover{
-    background-color: #8765F0;
+
+
+.label-2{
+	background: none;
+	font-size: 20px;
+	color: #94a1b2;
 }
-#registro input[type="button"]:active{
-    background-color: #7f5af0;
+
+.label-3{
+	background: none;
+	font-size: 20px;
+	margin-left: 1%;
+	color: #1C3DBA;
+	text-decoration: none;
+}
+
+.label-3:hover{
+	color: #0B299B;
+}
+
+select{
+	color: #94a1b2;
+	height: 100%;
 }
