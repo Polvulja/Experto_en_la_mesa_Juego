@@ -21,7 +21,7 @@
        <?php
 
     } else {
-        mysqli_error($conex);
+
         ?>
         <script type="text/javascript">
     alert(<?php echo $resultado ?>);
@@ -79,7 +79,7 @@
 			<input class="input" type="password" id="contra" name="contra" placeholder="Contraseña">
 		</div>
 
-		<input type="submit" name="boton_register" value="Registrarse" class="button">
+		<button type="submit" name="boton_register" value="Registrarse" class="button">Registrarse
 
 </form>
 
