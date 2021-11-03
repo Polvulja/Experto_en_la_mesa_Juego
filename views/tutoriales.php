@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html >
+<html>
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/Tutoriales.css">
     <link rel="stylesheet" href="../css/barra_izquierda.css">
-    <link rel="stylesheet" href="../css/libros.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/ee5c196280.js" crossorigin="anonymous"></script>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
+   
 <body>
-  <h1>Libros de Tahúrismo</h1>
+
+<div class="contenedor-buscador outline">
+    <input class="input1 outline" type="text" name="buscador">
+    <i class="fas fa-search icon"></i>
+</div> 
+
 <main><!--Libros--> 
   <div class="contenedor-abuelo">
     <div class="contenedor-padre">
@@ -20,7 +27,8 @@
           </div>
 
           <div class="contenedor-desc">
-            <a class="label-1" style="color: #94a1b2;" href="../Libros/libro_poker.pdf">Reglas Basicas del Poker</a>
+            <label class="label-1">Mezcla Americana</label>
+            <label class="label-2">Hace 1 semanas</label>
           </div>
 
       </div>
@@ -32,8 +40,8 @@
           </div>
 
           <div class="contenedor-desc">
-            <a class="label-1" style="color: #94a1b2;" href="../Libros/libro_poker.pdf">Reglas Basicas del Poker</a>
-             
+            <label class="label-1">Mezcla Hindu</label>
+            <label class="label-2">Hace 3 semanas</label>
           </div>
 
       </div>
@@ -45,8 +53,8 @@
           </div>
 
           <div class="contenedor-desc">
-            <a class="label-1" style="color: #94a1b2;" href="../Libros/libro_poker.pdf">Reglas Basicas del Poker</a>
-             
+            <label class="label-1">Mezcla por Cascada</label>
+            <label class="label-2">Hace 1 Mes</label>
           </div>
 
       </div>
@@ -58,8 +66,8 @@
           </div>
 
           <div class="contenedor-desc">
-            <a class="label-1" style="color: #94a1b2;" href="../Libros/libro_poker.pdf">Reglas Basicas del Poker</a>
-             
+            <label class="label-1">Mezcla en mesa</label>
+            <label class="label-2">Hace 3 semanas</label>
           </div>
 
       </div>
@@ -71,8 +79,8 @@
           </div>
 
           <div class="contenedor-desc">
-            <a class="label-1" style="color: #94a1b2;" href="../Libros/libro_poker.pdf">Reglas Basicas del Poker</a>
-             
+            <label class="label-1">Corte Charlier Invertido</label>
+            <label class="label-2">Hace 3 semanas</label>
           </div>
 
       </div>
@@ -84,8 +92,8 @@
           </div>
 
           <div class="contenedor-desc">
-            <a class="label-1" style="color: #94a1b2;" href="../Libros/libro_poker.pdf">Reglas Basicas del Poker</a>
-            
+            <label class="label-1">Corte Charlier</label>
+            <label class="label-2">Hace 3 semanas</label>
           </div>
 
       </div>

@@ -9,7 +9,7 @@
     $mail = trim($_POST['mail']);
     $contra = trim($_POST['contra']);
 
-    $consulta = "INSERT INTO usuarios(id, Nombre_Completo, Nombre_Usuario, Mail, Contraseña) VALUES (0,'$nom_comple','$nom_usua','$mail','$contra')";
+    $consulta = "INSERT INTO usuarios(Nombre_Usuario ,Nombre_Completo , Mail, Contraseña) VALUES ('$nom_usua','$nom_comple','$mail','$contra')";
     $resultado = mysqli_query($conex,$consulta);
 		echo $resultado;
     if ($resultado) {

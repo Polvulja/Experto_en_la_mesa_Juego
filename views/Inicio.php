@@ -73,7 +73,7 @@
 <div class="contenedor-seg"><!--tahures II--> 
       <div class="contenedor-img-3">
          <img class="img-1" src="../img/sw_erdnase.jpg">
-         <label class="label-2" style="color: #94a1b2;">"The expert at the card table" (1905)</label>
+         <label class="label-2" style="color: #94a1b2;">"The expert at the card table" (1902)</label>
       </div>
       <div class="desc-2">
         <p class="texto">En cuanto al origen de la palabra tahúr, aunque la RAE no lo asegura, posiblemente derive del árabe "dajul" que significa engañador. Otra teoría aventura que pudiera proceder del árabe "takfur", cuyo significado es vagabundo, errante, palabra que a su vez deriva del armenio "tagevor", título de los reyes de Armenia que posteriormente adoptó un valor muy negativo debido a sus difíciles relaciones con los cruzados.
@@ -82,6 +82,7 @@
 </div>
 
 </main>
+
 <div class="sidebar"><!--Barra--> 
 
     <div class="logo-details"><!--Titulo--> 
@@ -100,7 +101,7 @@
      </li>
 
      <li><!--Libros--> 
-       <a href="../views/libros.php">
+       <a href="libros.php">
         <i class='bx bx-book-bookmark'></i>
          <span class="links_name">Libros</span>
        </a>
@@ -108,7 +109,7 @@
      </li>
 
      <li><!--Historia--> 
-       <a href="../views/Inicio.php">
+       <a href="Inicio.php">
         <i class='bx bx-archive'></i>
          <span class="links_name">Historia </span>
        </a>
@@ -132,7 +133,7 @@
      </li>
 
      <li><!--Tutoriales--> 
-       <a href="#">
+       <a href="tutoriales.php">
         <i class='bx bx-video'></i>
          <span class="links_name">Tutoriales</span>
        </a>
