@@ -9,32 +9,33 @@
     $mail = trim($_POST['mail']);
     $contra = trim($_POST['contra']);
 
-    $consulta = "INSERT INTO usuarios(Nombre_Completo, Nombre_Usuario, Mail, Contraseña) VALUES ('$nom_comple','$nom_usua','$mail','$contra')";
+    $consulta = "INSERT INTO usuarios(id,Nombre_Completo, Nombre_Usuario, Mail, Contraseña) VALUES ('0','$nom_comple','$nom_usua','$mail','$contra')";
     $resultado = mysqli_query($conex,$consulta);
 
     if ($resultado) {
-        ?> 
+        ?>
         <script type="text/javascript">
     alert("Registro Exitoso");
     window.location.href="Inicio.php";
     </script>';
        <?php
-        
+
     } else {
-        ?> 
+        mysqli_error($conex);
+        ?>
         <script type="text/javascript">
     alert("¡Ups ha ocurrido un error!");
-    </script>';
+    </script>
        <?php
     }
 }   else {
-        ?> 
+        ?>
         <script type="text/javascript">
     alert("¡Por favor complete los campos!");
     </script>';
        <?php
 }
-       
+
    }
 
 ?>

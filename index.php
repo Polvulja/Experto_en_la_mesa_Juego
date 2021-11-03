@@ -1,33 +1,41 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="uft-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="ie-edge">
-        <link rel="stylesheet" href="css/registrarse.css" type="text/css" media="all">
-        <link rel="stylesheet" href="css/predefenido.css" type="text/css" media="all">
-        <title>Iniciar Sesion || Experto en la Mesa de Juego</title>
-    </head>
-    <body>
-        <div>
-        <div>
-        <form id="registro" id="form"method="POST" >
-                <h1>Iniciar Sesion</h1>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <script src="https://kit.fontawesome.com/ee5c196280.js" crossorigin="anonymous"></script>
+	<title>Iniciar Sesion || Experto en la Mesa de Juego</title>
+	<link rel="stylesheet" href="css/iniciar-sesion.css" type="text/css" media="all">
+</head>
 
-                <div>
-                    <p>Correo Electrónico:<i class="fa-solid fa-circle-exclamation"></i></p>
-                    <input type="email"  id="mail" class="input"name="mail">
+<body>
+<main>
 
-                    <p>Contraseña:<i class="fa-solid fa-circle-exclamation"></i></p>
-                    <input type="password" id="contra"class="input"name="contra" >
+	<form id="registro" id="form" method="POST" class="contenedor-iniciar-sesion">
 
-                    <button class ="Boton_registro"value="Continuar" name="enviar" type="submit">Iniciar Sesión</button> 
-                
-                    <p>¿No tienes una cuenta? </p><a href="views/formulario.php" style="color:#0505B4">Registrarse</a>
-                </div>
-            </form>
-            <?php
-            include("php/iniciar_sesion.php");
-            ?>
-        </div>
-    </body>
+		<label class="label-1">Iniciar Sesion</label>
+
+		<div class="contenedor-input1">
+			<i class="far fa-envelope icon"></i>
+			<input class="input pri" type="email" id="mail" name="mail" placeholder="Correo Electronico">
+		</div>
+
+		<div class="contenedor-input2">
+			<i class="fas fa-lock icon"></i>
+			<input class="input" type="password" id="contra" name="contra" placeholder="Contraseña">
+		</div>
+
+		<input type="submit" name="enviar" value="Iniciar Sesion" class="button">
+
+		<div class="contenedor-cuenta">
+			<label class="label-2">¿No tienes una cuenta? </label><a class="label-3" href="views/formulario.php" >Registrarse</a>
+		</div>
+	</form>
+	<?php
+    include("php/iniciar_sesion.php");
+    ?>
+
+</main>
+</body>
 </html>

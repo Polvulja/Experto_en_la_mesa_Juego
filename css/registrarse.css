@@ -1,99 +1,113 @@
 *{
-    padding: 0%;
-    margin: 0%;
-}
-body{
-    padding-top: 8%;
-    padding-bottom: 3%;
-    display: flex;
-    align-items: center;
-    background-color: #242629;
-    justify-content: center;
-    flex-direction: column;
-}
-#registro div{
-    /*Dimensiones del div que contiene los elementos*/
-    width: 58%;
-    height: 90%;
-    height: 100%;
-}
-#registro{
-    /*Como se despliegan los elementos*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2%;
-    
-    /*Color del contenedor*/
-    background-color: #11101D;
-
-    /*Otros*/
-    border-radius: 4px;
-}
-#registro p{
-    /*Color del texto*/
-    color: #94a1b2;
-
-    /*Tamaño, grosor y tipo de fuente del texto*/
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 1.15vw;
-
-    /*Otros*/
-    z-index: 3;
-    user-select: none;
+	margin: 0;
+	background: #242629;
 }
 
-#registro a{
-    /*Color del texto*/
-    color: #7f5af0;
+.contenedor-iniciar-sesion{
+	display: flex;
+	flex-direction: column;
+	width: 36.8%;
+	height: 400px;
+	background: #11101D;
+	margin: auto;
+	margin-top: 5%;
+	border-radius: 5px;
+	padding: 25px;
+}
 
-    /*Tamaño, grosor y tipo de fuente del texto*/
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 1.3vw;
+.label-1{
+	background: none;
+	font-size: 38px;
+	color: white;
+	margin-left: 30%;
+}
 
-    /*Otros*/
-    text-decoration: none;
-    user-select: none;
-    z-index: 3;
+.contenedor-input1{
+	display: flex;
+	background: none;
+	margin-top: 8%;
+	border: 1px solid #94a1b2;
+	background: none;
+	color: #94a1b2;
+	border-radius: 5px;
+	width: 100%;
+	height: 40%;
+	font-size: 20px;
 }
-#registro a:hover{
-    text-decoration: underline;
-    color: #8765F0;
+
+.contenedor-input2{
+	display: flex;
+	background: none;
+	margin-top: 5%;
+	background: none;
+	border: 1px solid #94a1b2;
+	background: none;
+	color: #94a1b2;
+	border-radius: 5px;
+	width: 100%;
+	height: 40%;
+	font-size: 20px;
 }
-#registro a:active{
-    text-decoration: none;
-    color: #7f5af0;
+
+.icon{
+	background: none;
+	font-size: 20px;
+	margin-top: 7px;
+	margin-right: 10px;
+	margin-left: 10px;
 }
-.Boton_registro{
-    /*Dimensiones del boton*/
+
+.input{
+	width: 99%;
+	height: 95%;
+	margin-left: 0%;
+	background: none;
+	border: none;
+	font-size: 15px;
+	color: white;
+}
+
+.input.pri{
+	width: 99%;
+	height: 95%;
+	margin-left: 0%;
+	background: none;
+	border-radius: none;
+	text-decoration: none;
+}
+
+.button{
+    border: none;
     width: 100%;
-    height: 8%;
-
-    /*Colores*/
-    background-color: #0505B4;
-    color: #fffffe;
-
-    /*Bordes*/
-    border: 1px solid transparent;
-    border-radius: 4px;
-
-    /*Tamaño, grosor y tipo de fuente del texto*/
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    font-size: 1.3vw;
-
-    /*Otros*/
-    margin-top: 7%;
-    margin-bottom: 4%;
-    z-index: 3;
+    color: white;
+    font-size: 18px;
+    background: #1C3DBA;
+    padding: 15px 20px;
+    border-radius: 5px;
     cursor: pointer;
+    margin-top: 8%;
+}
 
+.button:hover{
+    background: #0B299B;
+    transition: all 0.2s ease-out;
 }
-#registro input[type="button"]:hover{
-    background-color: #8765F0;
+
+
+.label-2{
+	background: none;
+	font-size: 20px;
+	color: #94a1b2;
 }
-#registro input[type="button"]:active{
-    background-color: #7f5af0;
+
+.label-3{
+	background: none;
+	font-size: 20px;
+	margin-left: 1%;
+	color: #1C3DBA;
+	text-decoration: none;
+}
+
+.label-3:hover{
+	color: #0B299B;
 }
