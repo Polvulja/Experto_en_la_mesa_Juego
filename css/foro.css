@@ -1,0 +1,246 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.cuadrado-1{
+	width: 100%;
+	height: 100%;
+	background: #ddd;
+	border: 1px solid lightgrey;
+	box-shadow: 0 7px 16px 0 rgb(0 0 0 / 10%), 0 1px 3px 0 rgb(0 0 0 / 10%);
+}
+
+.contenedor-titulo{
+	margin-left: 20%;
+	display: flex;
+	padding: 5px;
+}
+
+
+.contenedor-img{
+	width: 9%;
+	height: 100%;
+}
+
+.img-1{
+	width: 100%;
+	height: 100%;
+	border: 1px solid white;
+	border-radius: 30px;
+}
+
+.contenedor-label-1{
+	display: flex;
+	flex-direction: column;
+}
+
+.label-1{
+	font-size: 20px;
+	margin-left: 5px;
+	color: black; /**#94a1b2**/
+}
+
+.label-2{
+	font-size: 15px;
+	margin-top: 8px;
+	margin-left: 5px;
+	color: #7c7c7c;
+}	
+
+.contenedor-padre{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	margin-top: 1%;
+	margin-left: 25%;
+
+}
+
+.contenedor-principal{
+	width: 53%;
+	height: 100%;
+}
+
+.cuadrado-2{
+	width: 100%;
+	height: 100%;
+	background: #ddd;
+	border: 1px solid lightgrey;
+	box-shadow: 0 7px 16px 0 rgb(0 0 0 / 10%), 0 1px 3px 0 rgb(0 0 0 / 10%);
+	padding: 10px;
+}
+
+.contenedor-publicar{
+	display: flex;
+	flex-direction: column;
+	margin-top: 1%;
+	width: 100%;
+	height: 100%;
+	background: #ddd;
+	border: 1px solid lightgrey;
+	box-shadow: 0 7px 16px 0 rgb(0 0 0 / 10%), 0 1px 3px 0 rgb(0 0 0 / 10%);
+	padding: 10px;
+}
+
+.label-8{
+	font-size: 13px;
+	margin-left: 5px;
+	color: #7c7c7c;
+}	
+
+.label-9{
+	font-size: 18px;
+	margin-left: 5px;
+	margin-top: 8px;
+	color: black;
+}
+
+.label-10{
+	font-size: 15px;
+	margin-left: 5px;
+	margin-top: 8px;
+	color: black;
+}
+
+.contenedor-reacciones{
+	display: flex;
+	width: 100%;
+	margin-left: 5px;
+	margin-top: 1%;
+}
+
+.comentar{
+	display: flex;
+}
+
+.contenedor-derecho{
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+}
+
+.contenedor-comunidad{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.contenedor-reglas{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 1.5%;
+}
+
+.label-11{
+	font-size: 15px;
+	margin-top: 8px;
+	margin-left: 1px;
+	color: black;
+	border-bottom: 1px solid #aaa;
+}
+
+.label-11.margin{
+	margin-top: 15px;
+}
+
+.cuadrado-comunidad{
+	width: 100%;
+	height: 30%;
+	margin-left: 1%;
+	background: #1C3DBA;
+	border: 1px solid lightgrey;
+	box-shadow: 0 7px 16px 0 rgb(0 0 0 / 10%), 0 1px 3px 0 rgb(0 0 0 / 10%);
+	padding: 10px;
+}
+
+.contenido-comunidad{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background: #ddd;
+	margin-left: 1%;
+	padding: 10px;
+}
+
+.contenedor-info{
+	display: flex;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #aaa;
+	width: 100%;
+}
+
+.contenedor-label-icon{
+	display: flex;
+	flex-direction: column;
+}
+
+.contenedor-label-icon.left{
+	margin-left: 20%;
+}
+
+.contenedor-cumple{
+	display: flex;
+	margin-top: 5px;
+}
+
+.label-3{
+	font-size: 15px;
+	margin-top: 8px;
+	margin-left: 1px;
+	color: #7c7c7c;
+}
+
+.label-4{
+	font-size: 15px;
+	margin-top: 8px;
+	margin-left: 1px;
+	color: white;
+}
+
+.label-5{
+	font-size: 15px;
+	margin-top: 8px;
+	margin-left: 1px;
+	color: black;
+}
+
+.label-6{
+	font-size: 14px;
+	margin-top: 1px;
+	margin-left: 1px;
+	margin-bottom: 15px;
+	color: black;
+}
+
+.label-7{
+	font-size: 15px;
+	margin-top: 5px;
+	margin-left: 7px;
+	margin-bottom: 15px;
+	color: black;
+}
+
+.icon{
+	color: orange;
+
+}
+
+.icon-2{
+	color: red;
+	margin-left: 1px;
+}
+
+.icon-3{
+	color: black;
+	font-size: 24px;
+}
+
+.icon-4{
+	color: black;
+	font-size: 22px;
+	margin-left: 10px;
+	margin-top: 2px;
+}
