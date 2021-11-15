@@ -3,6 +3,30 @@
 	padding: 0px;
 }
 
+body {
+	overflow-x: hidden;
+}
+
+.icon-3 {
+	cursor: pointer;
+}
+
+.icon-3:hover {
+	color: red;
+}
+
+b {
+	color: royalblue;
+}
+
+.icon-4:hover {
+	color: royalblue;
+}
+
+.icon-4{
+	cursor: pointer;
+}
+
 .cuadrado-1{
 	width: 100%;
 	height: 100%;
@@ -46,7 +70,7 @@
 	margin-top: 8px;
 	margin-left: 5px;
 	color: #7c7c7c;
-}	
+}
 
 .contenedor-padre{
 	display: flex;
@@ -87,7 +111,7 @@
 	font-size: 13px;
 	margin-left: 5px;
 	color: #7c7c7c;
-}	
+}
 
 .label-9{
 	font-size: 18px;
