@@ -11,7 +11,6 @@
 
     $consulta = "INSERT INTO usuarios(Nombre_Usuario ,Nombre_Completo , Mail, Contraseña) VALUES ('$nom_usua','$nom_comple','$mail','$contra')";
     $resultado = mysqli_query($conex,$consulta);
-		echo $resultado;
     if ($resultado) {
         ?>
         <script type="text/javascript">

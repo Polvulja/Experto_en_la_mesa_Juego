@@ -1,3 +1,8 @@
+<?php
+    include("../con_db.php");
+    $consulta = "SELECT * FROM usuarios";
+    $resultado = mysqli_query($conex,$consulta);
+?>
 <!DOCTYPE html>
 <html >
   <head>
@@ -105,7 +110,7 @@
     <ul class="nav-list">
 
       <li><!--Perfil--> 
-       <a href="#">
+       <a href="perfil.php">
          <i class='bx bx-user' ></i>
          <span class="links_name">Perfil</span>
        </a>
@@ -156,7 +161,10 @@
          <div class="profile-details">
            <img src="../img/avatar.png" alt="profileImg">
            <div class="name_job">
-            <div class="name">Usuario 1
+            <div class="name">
+              <?php while ($consulta = mysqli_fetch_array($resultado)){
+              echo $consulta['Nombre_Usuario'];} 
+              ?>
             </div>
            </div>
            <a href="../index.php">
