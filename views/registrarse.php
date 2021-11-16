@@ -78,6 +78,7 @@
 			<input class="input" type="password" id="contra" name="contra" placeholder="Contraseña">
 		</div>
 
+        
 		<button type="submit" name="boton_register" value="Registrarse" class="button">Registrarse
 
 </form>

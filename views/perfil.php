@@ -2,7 +2,11 @@
     include("../con_db.php");
     $consulta = "SELECT * FROM usuarios";
     $resultado = mysqli_query($conex,$consulta);
+    $consulta = mysqli_fetch_array($resultado);
     
+    if(isset($_POST["foto"])){
+      alert("Registro Exitoso");
+  }
     
 ?>
 <!DOCTYPE html>
@@ -36,29 +40,26 @@
 
       <div class="contenedor-desc-2">
         <label class="label-4"><b>Hola! </b></label>
-        <label class="label-1"><b>Nombre Real:</b> 
-        <?php ?>
-        </label>
 
-        <label class="label-2"><b>Nombre de Usuario:</b>
-        <?php 
-        ?>
-        </label>
-        <label class="label-2"><b>Experiencia:</b> Mago Avanzado</label>
-        <label class="label-2"><b>Mail:</b> HarryHoudini@gmail.com</label>
-				<label class="label-2"><b>Experiencia:</b> Mago Avanzado</label>
-        <label class="label-2"><b>Mail:</b> HarryHoudini@gmail.com</label>
+        <label class="label-1"><b>Nombre Real: <?php echo $consulta['Nombre_Completo'];?></b> </label>
+
+        <label class="label-2"><b>Nombre de Usuario: </b><?php echo $consulta['Nombre_Usuario'];?></label>
+
+        <label class="label-2"><b>Mail:</b> <?php echo $consulta['Mail'];?></label>
+
+        <label class="label-2"><b>Contraseña:</b> <?php echo $consulta['Contraseña'];?></label>
+				
       </div>
 
       <div class="contenedor-label">
-        <label class="label-5">Editar</label>
+        <label class="label-5" name="editar_perfil">Editar</label>
       </div>
 
       </div>
 
-      <div class="contenedor-boton">
-        <input type="submit" name="enviar" value="Cambiar Foto" class="button">
-        <input type="submit" name="enviar" value="Cambiar Fondo" class="button-2">
+      <div class="contenedor-boton" method="POST">
+        <input type="submit" name="foto" value="Cambiar Foto" class="button">
+        <input type="submit" name="enviar" value="Subir Libro" class="button-2">
       </div>
 
     </div>
@@ -127,7 +128,7 @@
        <img src="../img/avatar.png" alt="profileImg">
        <div class="name_job">
         <div class="name">
-          <?php $consulta = mysqli_fetch_array($resultado);
+          <?php 
           echo $consulta['Nombre_Usuario'];
           ?>
         </div>
