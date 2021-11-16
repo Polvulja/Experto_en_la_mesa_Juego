@@ -4,9 +4,6 @@
     $resultado = mysqli_query($conex,$consulta);
     $consulta = mysqli_fetch_array($resultado);
     
-    if(isset($_POST["foto"])){
-      alert("Registro Exitoso");
-  }
     
 ?>
 <!DOCTYPE html>
@@ -38,21 +35,54 @@
 
       <div class="contenedor-editar">
 
-      <div class="contenedor-desc-2">
+      <form class="contenedor-desc-2" method="POST">
         <label class="label-4"><b>Hola! </b></label>
 
-        <label class="label-1"><b>Nombre Real: <?php echo $consulta['Nombre_Completo'];?></b> </label>
+        <div>
+          <label class="label-2"><b>Nombre Real:</b> </label>
+          <label class="label-1" id="label1"><?php echo $consulta['Nombre_Completo'];?></label>
+          <input type="text"class="input" name="input1" id="pep1" style="display: none" placeholder="<?php echo $consulta['Nombre_Completo'];?>">
+        </div>
 
-        <label class="label-2"><b>Nombre de Usuario: </b><?php echo $consulta['Nombre_Usuario'];?></label>
+        <div>
+        <label class="label-2" ><b>Nombre de Usuario: </b></label>
+        <label class="label-1" id="label2"><?php echo $consulta['Nombre_Usuario'];?></label>
+        <input type="text"class="input" name="input2" id="pep2" style="display: none" placeholder="<?php echo $consulta['Nombre_Usuario'];?>">
+        </div>
 
-        <label class="label-2"><b>Mail:</b> <?php echo $consulta['Mail'];?></label>
+        <div>
+        <label class="label-2"><b>Mail:</b> </label>
+        <label class="label-1" id="label3"><?php echo $consulta['Mail'];?></label>
+        <input type="text" class="input"name="input3" id="pep3" style="display: none" placeholder="<?php echo $consulta['Mail'];?>">
+        </div>
 
-        <label class="label-2"><b>Contraseña:</b> <?php echo $consulta['Contraseña'];?></label>
-				
-      </div>
+        <div>
+        <label class="label-2"><b>Contraseña:</b> </label>
+        <label class="label-1"id="label4"><?php echo $consulta['Contraseña'];?></label>
+        <input type="text"class="input" name="input4" id="pep4" style="display: none" placeholder="<?php echo $consulta['Contraseña'];?>">
+        </div>
+
+
+  </form>
 
       <div class="contenedor-label">
-        <label class="label-5" name="editar_perfil">Editar</label>
+        <label class="label-5" name="editar_perfil" onclick="mostrar()">Editar</label>
+        <script>
+          function mostrar(){
+            document.getElementById('pep1').style.display = "inline-block";
+            document.getElementById('pep2').style.display = "inline-block";
+            document.getElementById('pep3').style.display = "inline-block";
+            document.getElementById('pep4').style.display = "inline-block";
+            
+            document.getElementById('label1').style.display = "none";
+            document.getElementById('label2').style.display = "none";
+            document.getElementById('label3').style.display = "none";
+            document.getElementById('label4').style.display = "none";
+
+            document.getElementById('boton_terminar').style.display = "inline-block";
+            }
+        </script>
+        
       </div>
 
       </div>
@@ -60,6 +90,8 @@
       <div class="contenedor-boton" method="POST">
         <input type="submit" name="foto" value="Cambiar Foto" class="button">
         <input type="submit" name="enviar" value="Subir Libro" class="button-2">
+        <button type="submit" name="boton_terminar" value="Registrarse" class="button-2" id="boton_terminar" style="display: none">Registrarse
+
       </div>
 
     </div>

@@ -25,7 +25,10 @@
           </div>
 
           <div class="contenedor-desc">
-            <a class="label-1" style="color: #94a1b2;" href="../Libros/libro_poker.pdf">Reglas Basicas del Poker</a>
+            <a class="label-1 " style="color: #94a1b2;" href="../Libros/libro_poker.pdf">Reglas Basicas del Poker</a>
+            <a class="label-2" style="color: #94a1b2;" >Descargar Libro</a>
+            
+              
           </div>
 
       </div>
@@ -142,7 +145,7 @@
      </li>
 
      <li><!--Foro--> 
-       <a href="#">
+       <a href="foro.php">
         <i class='bx bx-conversation'></i>
          <span class="links_name">Foro</span>
        </a>

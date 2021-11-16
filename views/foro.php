@@ -71,7 +71,8 @@
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</label>
 				<div class="contenedor-reacciones">
-					<i class="far fa-heart icon-3"></i>
+					<i class="far fa-heart icon-3" ></i>
+					
 					<i class="far fa-comment-alt icon-4"></i>
 				</div>
 			</div>
