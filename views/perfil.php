@@ -3,8 +3,6 @@
     $consulta = "SELECT * FROM usuarios";
     $resultado = mysqli_query($conex,$consulta);
     $consulta = mysqli_fetch_array($resultado);
-    
-    
 ?>
 <!DOCTYPE html>
 <html>
@@ -36,34 +34,37 @@
       <div class="contenedor-editar">
 
       <form class="contenedor-desc-2" method="POST">
+      
         <label class="label-4"><b>Hola! </b></label>
 
         <div>
           <label class="label-2"><b>Nombre Real:</b> </label>
           <label class="label-1" id="label1"><?php echo $consulta['Nombre_Completo'];?></label>
-          <input type="text"class="input" name="input1" id="pep1" style="display: none" placeholder="<?php echo $consulta['Nombre_Completo'];?>">
+          <input type="text"class="input" name="Nombre_Completo" id="pep1" style="display: none" placeholder="<?php echo $consulta['Nombre_Completo'];?>">
         </div>
 
         <div>
         <label class="label-2" ><b>Nombre de Usuario: </b></label>
         <label class="label-1" id="label2"><?php echo $consulta['Nombre_Usuario'];?></label>
-        <input type="text"class="input" name="input2" id="pep2" style="display: none" placeholder="<?php echo $consulta['Nombre_Usuario'];?>">
+        <input type="text"class="input" name="Nombre_Usuario" id="pep2" style="display: none" placeholder="<?php echo $consulta['Nombre_Usuario'];?>">
         </div>
 
         <div>
         <label class="label-2"><b>Mail:</b> </label>
         <label class="label-1" id="label3"><?php echo $consulta['Mail'];?></label>
-        <input type="text" class="input"name="input3" id="pep3" style="display: none" placeholder="<?php echo $consulta['Mail'];?>">
+        <input type="text" class="input"name="Mail" id="pep3" style="display: none" placeholder="<?php echo $consulta['Mail'];?>">
         </div>
 
         <div>
         <label class="label-2"><b>Contraseña:</b> </label>
         <label class="label-1"id="label4"><?php echo $consulta['Contraseña'];?></label>
-        <input type="text"class="input" name="input4" id="pep4" style="display: none" placeholder="<?php echo $consulta['Contraseña'];?>">
+        <input type="text"class="input" name="Contraseña" id="pep4" style="display: none" placeholder="<?php echo $consulta['Contraseña'];?>">
         </div>
 
+        
 
-  </form>
+
+  
 
       <div class="contenedor-label">
         <label class="label-5" name="editar_perfil" onclick="mostrar()">Editar</label>
@@ -87,14 +88,37 @@
 
       </div>
 
-      <div class="contenedor-boton" method="POST">
+      <div class="contenedor-boton" >
         <input type="submit" name="foto" value="Cambiar Foto" class="button">
         <input type="submit" name="enviar" value="Subir Libro" class="button-2">
-        <button type="submit" name="boton_terminar" value="Registrarse" class="button-2" id="boton_terminar" style="display: none">Registrarse
+        <button type="submit" name="boton_terminar" value="Actualizar Datos" class="button-2" id="boton_terminar" style="display: none">Actualizar Datos
 
       </div>
+      <?php
+      if(isset($_POST['boton_terminar'])){
+        $Nombre_Completo = ($_POST['Nombre_Completo']);
+        $Nombre_Usuario = ($_POST['Nombre_Usuario']);
+        $Mail = ($_POST['Mail']);
+        $Contraseña = ($_POST['Contraseña']);
+
+        $consulta = ("UPDATE usuarios SET Nombre_Completo='$Nombre_Completo',Nombre_Usuario='$Nombre_Usuario',Mail='$Mail',Contraseña='$Contraseña'");
+
+        $resultado = mysqli_query($conex,$consulta);
+
+        if ($resultado) {
+          ?>
+          <script type="text/javascript">
+      alert("Se actualizo Correctamente!");
+      window.location.href="perfil.php";
+      </script>
+         <?php
+  
+      }
+    }
+      ?>
 
     </div>
+    </form>
 
 
   </main>
