@@ -22,7 +22,20 @@
       <div class="contenedor-fondo-foto">
 
         <div class="contenedor-foto">
-          <img class="img-perfil" src="../img/john-scarne_1.jpg">
+        <?php
+         $directory="Foto_Perfil/";
+         $dirint = dir($directory);
+     
+         while (($archivo = $dirint->read()) != false)
+         {
+             if (strpos($archivo,'jpg') || strpos($archivo,'jpeg')|| strpos($archivo,'png')){
+                 $image = $directory. $archivo;
+                 echo'<img class="img-perfil" src='.$image. '>';
+             }
+         }
+         $dirint->close();
+    ?>
+    
         </div>
 
         <div class="contenedor-fondo">
@@ -33,42 +46,43 @@
 
       <div class="contenedor-editar">
 
-      <form class="contenedor-desc-2" method="POST">
+      <form class="contenedor-desc-2" method="POST" enctype="multipart/form-data">
       
         <label class="label-4"><b>Hola! </b></label>
 
-        <div>
+        <div><!--Nombre Real -->
           <label class="label-2"><b>Nombre Real:</b> </label>
           <label class="label-1" id="label1"><?php echo $consulta['Nombre_Completo'];?></label>
           <input type="text"class="input" name="Nombre_Completo" id="pep1" style="display: none" placeholder="<?php echo $consulta['Nombre_Completo'];?>">
         </div>
 
-        <div>
-        <label class="label-2" ><b>Nombre de Usuario: </b></label>
-        <label class="label-1" id="label2"><?php echo $consulta['Nombre_Usuario'];?></label>
-        <input type="text"class="input" name="Nombre_Usuario" id="pep2" style="display: none" placeholder="<?php echo $consulta['Nombre_Usuario'];?>">
-        </div>
-
-        <div>
-        <label class="label-2"><b>Mail:</b> </label>
-        <label class="label-1" id="label3"><?php echo $consulta['Mail'];?></label>
-        <input type="text" class="input"name="Mail" id="pep3" style="display: none" placeholder="<?php echo $consulta['Mail'];?>">
-        </div>
-
-        <div>
-        <label class="label-2"><b>Contraseña:</b> </label>
-        <label class="label-1"id="label4"><?php echo $consulta['Contraseña'];?></label>
-        <input type="text"class="input" name="Contraseña" id="pep4" style="display: none" placeholder="<?php echo $consulta['Contraseña'];?>">
+        <div><!--Nombre usuario -->
+          <label class="label-2" ><b>Nombre de Usuario: </b></label>
+          <label class="label-1" id="label2"><?php echo $consulta['Nombre_Usuario'];?></label>
+          <input type="text"class="input" name="Nombre_Usuario" id="pep2" style="display: none" placeholder="<?php echo $consulta['Nombre_Usuario'];?>">
         </div>
 
         
+        <div><!--Mail -->
+          <label class="label-2"><b>Mail:</b> </label>
+          <label class="label-1" id="label3"><?php echo $consulta['Mail'];?></label>
+          <input type="text" class="input"name="Mail" id="pep3" style="display: none" placeholder="<?php echo $consulta['Mail'];?>">
+        </div>
 
+        <div><!--Contraseña -->
+          <label class="label-2"><b>Contraseña:</b> </label>
+          <label class="label-1"id="label4"><?php echo $consulta['Contraseña'];?></label>
+          <input type="text"class="input" name="Contraseña" id="pep4" style="display: none" placeholder="<?php echo $consulta['Contraseña'];?>">
+        </div>
 
-  
-
-      <div class="contenedor-label">
+      <div class="contenedor-label"><!--Botones de editar -->
         <label class="label-5" name="editar_perfil" onclick="mostrar()">Editar</label>
+        <label class="label-5" name="editar_perfil" onclick="Subir_Foto()">Foto de Perfil</label>
         <script>
+          function Subir_Foto(){
+            document.getElementById('subir_foto').style.display = "inline-block";
+            document.getElementById('pp').style.display = "inline-block";
+          }
           function mostrar(){
             document.getElementById('pep1').style.display = "inline-block";
             document.getElementById('pep2').style.display = "inline-block";
@@ -83,19 +97,33 @@
             document.getElementById('boton_terminar').style.display = "inline-block";
             }
         </script>
+
         
       </div>
 
       </div>
 
       <div class="contenedor-boton" >
-        <input type="submit" name="foto" value="Cambiar Foto" class="button">
+        <input type="file" name="foto2" id="subir_foto"value="Cambiar Foto" style="display: none"class="button">
         <input type="submit" name="enviar" value="Subir Libro" class="button-2">
+        <button type="submit" name="foto" value="Actualizar Datos" class="button-2" id="pp" style="display: none">Subir Foto
         <button type="submit" name="boton_terminar" value="Actualizar Datos" class="button-2" id="boton_terminar" style="display: none">Actualizar Datos
 
       </div>
       <?php
+    if(isset($_POST['foto'])){
+      $nombreImagen = $_FILES['foto2']['name'];
+      $archivo = $_FILES['foto2']['tmp_name'];
+      $ruta = "Foto_Perfil";
+      $carpeta = $ruta."/";
+      $ruta = $ruta."/"."/".$nombreImagen;
+      if (!file_exists($carpeta)) {
+          mkdir($carpeta, 0777, true);
+      }
+      move_uploaded_file($archivo,$ruta);
+    }
       if(isset($_POST['boton_terminar'])){
+        if(strlen($_POST['Nombre_Completo']) >=1 && strlen($_POST['Nombre_Usuario']) >=1){
         $Nombre_Completo = ($_POST['Nombre_Completo']);
         $Nombre_Usuario = ($_POST['Nombre_Usuario']);
         $Mail = ($_POST['Mail']);
@@ -115,6 +143,7 @@
   
       }
     }
+  }
       ?>
 
     </div>
@@ -123,11 +152,10 @@
 
   </main>
 <div class="sidebar"><!--Barra--> 
-
-<div class="logo-details"><!--Titulo--> 
+  <div class="logo-details"><!--Titulo--> 
     <div class="logo_name">Bienvenido</div>
     <i class='bx bx-menu' id="btn" ></i>
-</div>
+ </div>
 
 <ul class="nav-list">
 
@@ -181,11 +209,24 @@
 
  <li class="profile"><!--Avatar--> 
      <div class="profile-details">
-       <img src="../img/avatar.png" alt="profileImg">
+     <?php
+         $directory="Foto_Perfil/";
+         $dirint = dir($directory);
+     
+         while (($archivo = $dirint->read()) != false)
+         {
+             if (strpos($archivo,'jpg') || strpos($archivo,'jpeg')|| strpos($archivo,'png')){
+                 $image = $directory. $archivo;
+                 echo'<img class="img-perfil" src='.$image. '>';
+             }
+         }
+         $dirint->close();
+    ?>
        <div class="name_job">
         <div class="name">
           <?php 
           echo $consulta['Nombre_Usuario'];
+        
           ?>
         </div>
        </div>

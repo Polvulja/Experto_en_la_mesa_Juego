@@ -14,7 +14,7 @@
     if ($resultado) {
         ?>
         <script type="text/javascript">
-    alert("Registro Exitoso");
+    alert("Registro Exitoso!");
     window.location.href="Inicio.php";
     </script>
        <?php
