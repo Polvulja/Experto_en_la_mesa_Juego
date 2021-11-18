@@ -195,3 +195,11 @@ margin-top: 4%;
 .label-5:hover{
 	color: #0B299B;
 }
+.input{
+	width: 50%;
+	height: 100%;
+	background: none;
+	border: none;
+	font-size: 20px;
+	color: white;
+}
