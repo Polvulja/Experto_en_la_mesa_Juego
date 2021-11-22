@@ -21,12 +21,14 @@
         while($row = mysqli_fetch_array($result)) 
         { 
             $usuario=$row['Mail'];
+            
             //$ct=password_verify($contra, $row['password']);
             $ct=$row['Contraseña'];
             if($usuario == $mail && $contraseña == $ct){
                 session_start();
+                setcookie("idactual" ,$row['id']);
                 $_SESSION["mail"] = $usuario;
-                setcookie("id" ,"$row['id']");
+                
                 header('Location: views/Inicio.php');
                 return;
             }else if ($usuario == $mail && $Contraseña != $ct) {

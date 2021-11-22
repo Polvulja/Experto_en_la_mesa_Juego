@@ -23,7 +23,6 @@
 
         ?>
         <script type="text/javascript">
-    alert(<?php echo $resultado ?>);
     </script>
        <?php
     }

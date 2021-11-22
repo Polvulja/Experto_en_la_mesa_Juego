@@ -50,7 +50,7 @@
         <div><!--Nombre Real -->
           <label class="label-2"><b>Nombre Real:</b> </label>
           <label class="label-1" id="label1">
-          <?php echo $consulta ['Nombre_Completo'];?>
+            <?php echo $consulta ['Nombre_Completo'];?>
           </label>
           <input type="text"class="input" name="Nombre_Completo" id="pep1" style="display: none" placeholder="<?php echo $consulta['Nombre_Completo'];?>">
         </div>
@@ -83,6 +83,7 @@
         <label class="label-5" name="editar_perfil" onclick="mostrar()">Editar</label>
         <label class="label-5" name="editar_perfil" onclick="Subir_Foto()">Subir Foto de Perfil</label>
         <label class="label-5" name="editar_perfil" onclick="Subir_libro()">Subir Libro</label> 
+        
       </div>
 
       </div>
@@ -137,7 +138,7 @@
         $Mail = ($_POST['Mail']);
         $Contraseña = ($_POST['Contraseña']);
 
-        $consulta = "UPDATE usuarios SET Nombre_Completo='$Nombre_Completo',Mail='$Mail',Contraseña='$Contraseña' WHERE id='$id'";
+        $consulta = "UPDATE usuarios SET Nombre_Completo='$Nombre_Completo',Nombre_Usuario='$Nombre_Usuario',Mail='$Mail',Contraseña='$Contraseña' WHERE id='$id'";
         $resultado = mysqli_query($conex,$consulta);
         if ($resultado) {
           ?>
@@ -242,7 +243,7 @@
 </ul>
 
 </div>
-  <script>
+<script>
   let sidebar = document.querySelector(".sidebar");
   let closeBtn = document.querySelector("#btn");
   let searchBtn = document.querySelector(".bx-search");
@@ -254,7 +255,7 @@
 
   searchBtn.addEventListener("click", ()=>{
     sidebar.classList.toggle("open");
-    menuBtnChange();
+    menuBtnChange(); 
   });
 
   function menuBtnChange() {
