@@ -1,10 +1,14 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtmll-strict.dtd">
 <?php
     include("../con_db.php");
-    $consulta = "SELECT * FROM usuarios";
-    $resultado = mysqli_query($conex,$consulta);
+    $hola=$_COOKIE["idactual"];
+    $consulata = "SELECT * FROM usuarios WHERE id=$hola";
+    $resultado = mysqli_query($conex,$consulata);
     $consulta = mysqli_fetch_array($resultado);
-?>
-<!DOCTYPE html>
+    $id=$consulta['id'];
+    
+?> 
 <html>
 <head>
 	<meta charset="UTF-8">

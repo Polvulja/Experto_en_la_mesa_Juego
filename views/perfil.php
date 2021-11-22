@@ -78,7 +78,6 @@
           </label>
           <input type="text"class="input" name="Contraseña" id="pep4" style="display: none" placeholder="<?php echo $consulta['Contraseña'];?>">
         </div>
-        <input  name="id" value="<?php echo $hola ?>" >
 
       <div class="contenedor-label"><!--Botones de editar -->
         <label class="label-5" name="editar_perfil" onclick="mostrar()">Editar</label>
