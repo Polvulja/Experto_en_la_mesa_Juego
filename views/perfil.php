@@ -1,16 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtmll-strict.dtd">
 <?php
     include("../con_db.php");
-    $consulta = "SELECT * FROM usuarios";
-    $resultado = mysqli_query($conex,$consulta);
+    $hola=$_COOKIE["idactual"];
+    $consulata = "SELECT * FROM usuarios WHERE id=$hola";
+    $resultado = mysqli_query($conex,$consulata);
     $consulta = mysqli_fetch_array($resultado);
-?>
-<!DOCTYPE html>
+    $id=$consulta['id'];
+    
+?> 
 <html>
 <head>
 	<meta charset="UTF-8">
     <link rel="stylesheet" href="../css/perfil.css">
     <link rel="stylesheet" href="../css/barra_izquierda.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="../php/Funciones.js"></script>
     <script src="https://kit.fontawesome.com/ee5c196280.js" crossorigin="anonymous"></script>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -18,9 +23,7 @@
 
 <main>
     <div class="contenedor-padre-2">
-
       <div class="contenedor-fondo-foto">
-
         <div class="contenedor-foto">
         <?php
          $directory="Foto_Perfil/";
@@ -37,98 +40,50 @@
          ?>
     
         </div>
-
         <div class="contenedor-fondo">
-
         </div>
-
       </div>
-
       <div class="contenedor-editar">
-
       <form class="contenedor-desc-2" method="POST" enctype="multipart/form-data">
       
         <label class="label-4"><b>Hola! </b></label>
-
         <div><!--Nombre Real -->
           <label class="label-2"><b>Nombre Real:</b> </label>
-          <label class="label-1" id="label1"><?php echo $consulta['Nombre_Completo'];?></label>
+          <label class="label-1" id="label1">
+          <?php echo $consulta ['Nombre_Completo'];?>
+          </label>
           <input type="text"class="input" name="Nombre_Completo" id="pep1" style="display: none" placeholder="<?php echo $consulta['Nombre_Completo'];?>">
         </div>
 
         <div><!--Nombre usuario -->
           <label class="label-2" ><b>Nombre de Usuario: </b></label>
-          <label class="label-1" id="label2"><?php echo $consulta['Nombre_Usuario'];?></label>
+          <label class="label-1" id="label2">
+          <?php echo $consulta['Nombre_Usuario'];?>
+          </label>
           <input type="text"class="input" name="Nombre_Usuario" id="pep2" style="display: none" placeholder="<?php echo $consulta['Nombre_Usuario'];?>">
         </div>
 
         <div><!--Mail -->
           <label class="label-2"><b>Mail:</b> </label>
-          <label class="label-1" id="label3"><?php echo $consulta['Mail'];?></label>
+          <label class="label-1" id="label3">
+          <?php echo $consulta['Mail'];?>
+          </label>
           <input type="text" class="input"name="Mail" id="pep3" style="display: none" placeholder="<?php echo $consulta['Mail'];?>">
         </div>
 
         <div><!--Contraseña -->
           <label class="label-2"><b>Contraseña:</b> </label>
-          <label class="label-1"id="label4"><?php echo $consulta['Contraseña'];?></label>
+          <label class="label-1"id="label4">
+          <?php echo $consulta['Contraseña'];?>
+          </label>
           <input type="text"class="input" name="Contraseña" id="pep4" style="display: none" placeholder="<?php echo $consulta['Contraseña'];?>">
         </div>
+        <input  name="id" value="<?php echo $hola ?>" >
 
       <div class="contenedor-label"><!--Botones de editar -->
         <label class="label-5" name="editar_perfil" onclick="mostrar()">Editar</label>
         <label class="label-5" name="editar_perfil" onclick="Subir_Foto()">Subir Foto de Perfil</label>
-        <label class="label-5" name="editar_perfil" onclick="Subir_libro()">Subir Libro</label>
-        <script>
-          function Subir_libro(){
-            document.getElementById('subir_foto').style.display = "inline-block";
-            document.getElementById('pp2').style.display = "inline-block";
-            document.getElementById('label1').style.display = "inline-block";
-            document.getElementById('label2').style.display = "inline-block";
-            document.getElementById('label3').style.display = "inline-block";
-            document.getElementById('label4').style.display = "inline-block";
-
-            document.getElementById('boton_terminar').style.display = "none";
-            document.getElementById('pp').style.display = "none";
-            document.getElementById('pep1').style.display = "none";
-            document.getElementById('pep2').style.display = "none";
-            document.getElementById('pep3').style.display = "none";
-            document.getElementById('pep4').style.display = "none";
-          }
-          function Subir_Foto(){
-            document.getElementById('subir_foto').style.display = "inline-block";
-            document.getElementById('pp').style.display = "inline-block";
-            document.getElementById('label1').style.display = "inline-block";
-            document.getElementById('label2').style.display = "inline-block";
-            document.getElementById('label3').style.display = "inline-block";
-            document.getElementById('label4').style.display = "inline-block";
-
-            document.getElementById('boton_terminar').style.display = "none";
-            document.getElementById('pp2').style.display = "none";
-            document.getElementById('pep1').style.display = "none";
-            document.getElementById('pep2').style.display = "none";
-            document.getElementById('pep3').style.display = "none";
-            document.getElementById('pep4').style.display = "none";
-          }
-          function mostrar(){
-            document.getElementById('pep1').style.display = "inline-block";
-            document.getElementById('pep2').style.display = "inline-block";
-            document.getElementById('pep3').style.display = "inline-block";
-            document.getElementById('pep4').style.display = "inline-block";
-            
-            document.getElementById('label1').style.display = "none";
-            document.getElementById('label2').style.display = "none";
-            document.getElementById('label3').style.display = "none";
-            document.getElementById('label4').style.display = "none";
-            document.getElementById('pp2').style.display = "none";
-            document.getElementById('pp').style.display = "none";
-            document.getElementById('subir_foto').style.display = "none";
-            
-
-            document.getElementById('boton_terminar').style.display = "inline-block";
-            }
-        </script>
-
-        
+        <label class="label-5" name="editar_perfil" onclick="Subir_libro()">Subir Libro</label> 
       </div>
 
       </div>
@@ -176,29 +131,25 @@
         <?php
       move_uploaded_file($archivo,$ruta);
     }
-
       if(isset($_POST['boton_terminar'])){
-        if(strlen($_POST['Nombre_Completo']) >=1 && strlen($_POST['Nombre_Usuario']) >=1){
+
         $Nombre_Completo = ($_POST['Nombre_Completo']);
         $Nombre_Usuario = ($_POST['Nombre_Usuario']);
         $Mail = ($_POST['Mail']);
         $Contraseña = ($_POST['Contraseña']);
 
-        $consulta = ("UPDATE usuarios SET Nombre_Completo='$Nombre_Completo',Nombre_Usuario='$Nombre_Usuario',Mail='$Mail',Contraseña='$Contraseña'");
-
+        $consulta = "UPDATE usuarios SET Nombre_Completo='$Nombre_Completo',Mail='$Mail',Contraseña='$Contraseña' WHERE id='$id'";
         $resultado = mysqli_query($conex,$consulta);
-
         if ($resultado) {
-        ?>
-          <script type="text/javascript">
-          alert("Se actualizo Correctamente!");
-          window.location.href="perfil.php";
-          </script>
-        <?php
-  
+          ?>
+            <script type="text/javascript">
+            alert("Se actualizo Correctamente!");
+            window.location.href="perfil.php";
+            </script>
+          <?php
+
       }
     }
-  }
       ?>
     </div>
     </form>
