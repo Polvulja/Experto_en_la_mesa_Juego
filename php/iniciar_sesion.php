@@ -26,6 +26,7 @@
             if($usuario == $mail && $contraseña == $ct){
                 session_start();
                 $_SESSION["mail"] = $usuario;
+                setcookie("id" ,"$row['id']");
                 header('Location: views/Inicio.php');
                 return;
             }else if ($usuario == $mail && $Contraseña != $ct) {
