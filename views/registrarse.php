@@ -14,7 +14,7 @@
     if ($resultado) {
         ?>
         <script type="text/javascript">
-    alert("Registro Exitoso!");
+    alert("Registro Exitoso! Puedes subir una foto de perfil en el area Perfil");
     window.location.href="Inicio.php";
     </script>
        <?php
@@ -36,8 +36,6 @@
 }
 
    }
-   setcookie("nombre" ,"Juancito");
-
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
