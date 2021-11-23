@@ -18,7 +18,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
-  <h1>Libros de Tahúrismo</h1>
+  <h1>Libros Basicos</h1>
 <main><!--Libros--> 
   <div class="contenedor-abuelo">
     <div class="contenedor-padre">
@@ -30,10 +30,8 @@
           </div>
 
           <div class="contenedor-desc">
-            <a class="label-1 " style="color: #94a1b2;" href="../Libros/libro_poker.pdf">Reglas Basicas del Poker</a>
-            <a class="label-2" style="color: #94a1b2;" >Descargar Libro</a>
-            
-              
+            <a class="label-1 " style="color: #94a1b2;" href="../Libros_Basicos/libro_poker.pdf">Reglas Basicas del Poker</a>
+            <a class="label-1" style="color: #94a1b2;" href="../Libros_Basicos/libro_poker.pdf" download="libro_poker.pdf" >Descargar Libro</a>
           </div>
 
       </div>
@@ -41,66 +39,59 @@
       <div class="contenedor-video">
 
           <div class="contenedor-img">
-            <img class="img-1" src="../img/poker.jpg">
+            <img class="img-1" src="../img/blackjack.jpg">
           </div>
-
           <div class="contenedor-desc">
-            <a class="label-1" style="color: #94a1b2;" href="../Libros/libro_poker.pdf">Reglas Basicas del Poker</a>
-             
-          </div>
-
-      </div>
-
-      <div class="contenedor-video">
-
-          <div class="contenedor-img">
-            <img class="img-1" src="../img/poker.jpg">
-          </div>
-
-          <div class="contenedor-desc">
-            <a class="label-1" style="color: #94a1b2;" href="../Libros/libro_poker.pdf">Reglas Basicas del Poker</a>
-             
-          </div>
-
-      </div>
-
-      <div class="contenedor-video">
-
-          <div class="contenedor-img">
-            <img class="img-1" src="../img/poker.jpg">
-          </div>
-
-          <div class="contenedor-desc">
-            <a class="label-1" style="color: #94a1b2;" href="../Libros/libro_poker.pdf">Reglas Basicas del Poker</a>
-             
-          </div>
-
-      </div>
-
-      <div class="contenedor-video">
-
-          <div class="contenedor-img">
-            <img class="img-1" src="../img/poker.jpg">
-          </div>
-
-          <div class="contenedor-desc">
-            <a class="label-1" style="color: #94a1b2;" href="../Libros/libro_poker.pdf">Reglas Basicas del Poker</a>
-             
-          </div>
-
-      </div>
-
-      <div class="contenedor-video">
-
-          <div class="contenedor-img">
-            <img class="img-1" src="../img/poker.jpg">
-          </div>
-
-          <div class="contenedor-desc">
-            <a class="label-1" style="color: #94a1b2;" href="../Libros/libro_poker.pdf">Reglas Basicas del Poker</a>
+            <a class="label-1" style="color: #94a1b2;" href="../Libros_Basicos/Reglamento Black Jack.pdf">Reglas Basicas del BlackJack</a>
+            <a class="label-1" style="color: #94a1b2;" href="../Libros_Basicos/Reglamento Black Jack.pdf" download="Reglamento Black Jack.pdf" >Descargar Libro</a>
             
           </div>
 
+      </div>
+
+      <div class="contenedor-video">
+
+          <div class="contenedor-img">
+            <img class="img-1" src="../img/Dados.jpg">
+          </div>
+
+          <div class="contenedor-desc">
+          <a class="label-1" style="color: #94a1b2;" href="../Libros_Basicos/Reglamento Craps.pdf">Reglas Basicas del Craps</a>
+          <a class="label-1" style="color: #94a1b2;" href="../Libros_Basicos/Reglamento Craps.pdf" download="Reglamento Craps.pdf" >Descargar Libro</a>
+            
+          </div>
+
+      </div>
+
+      <div class="contenedor-video">
+          <div class="contenedor-img">
+            <img class="img-1" src="../img/Ruleta.jpg">
+          </div>
+          <div class="contenedor-desc">
+          <a class="label-1" style="color: #94a1b2;" href="../Libros_Basicos/Ruleta.pdf">Reglas Basicas de la Ruleta</a>
+          <a class="label-1" style="color: #94a1b2;" href="../Libros_Basicos/Ruleta.pdf" download="Ruleta.pdf" >Descargar Libro</a>
+          </div>
+      </div>
+
+      
+      <div class="contenedor-video">
+          <div class="contenedor-img">
+            <img class="img-1" src="../img/PP.jpg">
+          </div>
+          <div class="contenedor-desc">
+          <a class="label-1" style="color: #94a1b2;" href="../Libros_Basicos/puntoybanca.pdf">Reglas Basicas de Punto y Banca</a>
+          <a class="label-1" style="color: #94a1b2;" href="../Libros_Basicos/puntoybanca.pdf" download="puntoybanca.pdf" >Descargar Libro</a>
+          </div>
+      </div>
+
+      <div class="contenedor-video">
+          <div class="contenedor-img">
+            <img class="img-1" src="../img/truco.jpg">
+          </div>
+          <div class="contenedor-desc">
+          <a class="label-1" style="color: #94a1b2;" href="../Libros_Basicos/Truco-criollo.pdf">Reglas Basicas del Truco Argentino</a>
+          <a class="label-1" style="color: #94a1b2;" href="../Libros_Basicos/Truco-criollo.pdf" download="Truco-criollo.pdf" >Descargar Libro</a>
+          </div>
       </div>
       
     </div>

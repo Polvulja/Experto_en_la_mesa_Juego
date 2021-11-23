@@ -18,7 +18,7 @@
     if ($resultado) {
         ?>
         <script type="text/javascript">
-    alert("Registro Exitoso! Ahora deberás iniciar sesion para comprobar que todo esta bien.");
+    alert("Registro Exitoso! Ahora deberás iniciar sesion para comprobar que los datos esten correctos.");
     window.location.href="../index.php";
     </script>
        <?php

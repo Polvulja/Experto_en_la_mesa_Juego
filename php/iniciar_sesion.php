@@ -28,7 +28,7 @@
                 session_start();
                 setcookie("idactual" ,$row['id']);
                 $_SESSION["mail"] = $usuario;
-                
+                echo "<script>alert('Biendenido! Podrá agregar una foto de perfil en el area de perfil.');</script>";
                 header('Location: views/Inicio.php');
                 return;
             }else if ($usuario == $mail && $contraseña != $ct) {
