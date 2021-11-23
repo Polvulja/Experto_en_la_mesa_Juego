@@ -6,7 +6,6 @@
     $consulata = "SELECT * FROM usuarios WHERE id=$hola";
     $resultado = mysqli_query($conex,$consulata);
     $consulta = mysqli_fetch_array($resultado);
-    $id=$consulta['id'];
     
 ?> 
 <html>
@@ -138,7 +137,7 @@
         $Mail = ($_POST['Mail']);
         $Contraseña = ($_POST['Contraseña']);
 
-        $consulta = "UPDATE usuarios SET Nombre_Completo='$Nombre_Completo',Nombre_Usuario='$Nombre_Usuario',Mail='$Mail',Contraseña='$Contraseña' WHERE id='$id'";
+        $consulta = "UPDATE usuarios SET Nombre_Completo='$Nombre_Completo',Nombre_Usuario='$Nombre_Usuario',Mail='$Mail',Contraseña='$Contraseña' WHERE id='$hola'";
         $resultado = mysqli_query($conex,$consulta);
         if ($resultado) {
           ?>

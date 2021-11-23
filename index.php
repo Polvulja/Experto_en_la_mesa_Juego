@@ -24,7 +24,7 @@
 
 		<div class="contenedor-input2">
 			<i class="fas fa-lock icon"></i>
-			<input class="input" type="password" id="contra" name="contra" placeholder="Contraseña">
+			<input class="input" type="password" id="contraseña" name="contra" placeholder="Contraseña">
 		</div>
 
 		<input type="submit" name="enviar" value="Iniciar Sesion" class="button">

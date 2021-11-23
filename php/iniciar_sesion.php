@@ -31,7 +31,7 @@
                 
                 header('Location: views/Inicio.php');
                 return;
-            }else if ($usuario == $mail && $Contraseña != $ct) {
+            }else if ($usuario == $mail && $contraseña != $ct) {
                 echo "<script>alert('Contraseña incorrecta. Intente nuevamente.');</script>";
                 disconnectDB($conexion);
                 return;

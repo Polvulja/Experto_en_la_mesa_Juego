@@ -9,13 +9,17 @@
     $mail = trim($_POST['mail']);
     $contra = trim($_POST['contra']);
 
-    $consulta = "INSERT INTO usuarios(id,Nombre_Usuario ,Nombre_Completo , Mail, Contraseña) VALUES ('$nom_usua','$nom_comple','$mail','$contra')";
+    $consulta = "INSERT INTO usuarios(Nombre_Usuario ,Nombre_Completo , Mail, Contraseña) VALUES ('$nom_usua','$nom_comple','$mail','$contra')";
     $resultado = mysqli_query($conex,$consulta);
+    $row = mysqli_fetch_array($resultado);
+    setcookie("idactual" ,$row['id']);
+    
+    
     if ($resultado) {
         ?>
         <script type="text/javascript">
-    alert("Registro Exitoso! Puedes subir una foto de perfil en el area Perfil");
-    window.location.href="Inicio.php";
+    alert("Registro Exitoso! Ahora deberás iniciar sesion para comprobar que todo esta bien.");
+    window.location.href="../index.php";
     </script>
        <?php
 
