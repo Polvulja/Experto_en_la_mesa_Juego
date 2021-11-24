@@ -14,6 +14,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/barra_izquierda.css">
     <link rel="stylesheet" href="../css/libros.css">
+    <script src="../php/Funciones.js"></script>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
@@ -132,27 +133,11 @@
  </li>
 
  <li><!--SW Erdnase--> 
-   <a href="#">
+   <a href="sw.php">
     <i class='bx bx-question-mark'></i>
      <span class="links_name">SW Erdnase</span>
    </a>
    <span class="tooltip">SW Erdnase</span>
- </li>
-
- <li><!--Foro--> 
-   <a href="#">
-    <i class='bx bx-conversation'></i>
-     <span class="links_name">Foro</span>
-   </a>
-   <span class="tooltip">Foro</span>
- </li>
-
- <li><!--Tutoriales--> 
-   <a href="tutoriales.php">
-    <i class='bx bx-video'></i>
-     <span class="links_name">Tutoriales</span>
-   </a>
-   <span class="tooltip">Tutoriales</span>
  </li>
 
  <li class="profile"><!--Avatar--> 
